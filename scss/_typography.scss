@@ -1,0 +1,44 @@
+.title {
+  &--large {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+  }
+  
+  &--middle {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+
+    &--light {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    &--red {
+      color: #fe8380;
+
+      &--lower {
+        line-height: 33px;
+      }
+    }
+  }
+
+  &--small {
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+  }
+}
+
+.question {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.copyright {
+  font-size: 15px;
+  line-height: 23px;
+  color: #c9c9c9;
+}

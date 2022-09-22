@@ -4,9 +4,587 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Helsi</title>
+  <link rel="icon" href="./img/favicon/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/main.css">
+  <title>MIC - Helsi</title>
 </head>
 <body>
-  
+  <header class="header">
+    <div class="header__content container">
+      <div>
+        <a href="/">
+          <svg class="header__logo">
+            <use xlink:href="./img/header/logo.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="/">Головна</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Для Аптек</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Для Лікарень</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Пацієнтам</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Питання про реформу</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">КЕП</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Про Helsi</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Інструкції</a></li>
+        </ul>
+        <button class="header__btn ">
+          Вхід
+        </button>
+      </nav>
+    </div>
+    <div class="btn-menu">
+      <div class="btn-menu__line"></div>
+      <div class="btn-menu__line"></div>
+      <div class="btn-menu__line"></div>
+    </div>  
+  </header>
+  <main>
+    <section>
+      <article class="hero hero-container">
+        <div class="hero__img">
+          <picture>
+            <img src="./img/articles/hero.png" alt="Helsi.me">
+          </picture>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title title--large">Helsi — зручна медична інформаційна система</h1>
+          <div class="hero__btn">
+            <button class="btn btn--blue">Зареєструвати заклад</button>
+            <button class="btn btn--red">Увійти</button>
+          </div>
+          <a href="/" class="hero__help-link">Як зареєструвати заклад?</a>
+          <p class="hero__question">Є питання? Телефонуйте до служби підтримки:</p>
+          <div class="numbers">
+            <div class="numbers-content">
+              <div class="numbers-item">
+                <svg>
+                  <use xlink:href="./img/icons_phones/telephone.svg#phone"></use>
+                </svg>
+                <a href="tel:+380445801090" class="numbers-link numbers-link--blue">044 580-10-90</a>
+              </div>
+              <div class="numbers-item">
+                <svg>
+                  <use xlink:href="./img/icons_phones/kyivstar.svg#kyivstar"></use>
+                </svg>
+                <a href="tel:+380685801090" class="numbers-link numbers-link--blue">068 580-10-90</a>
+              </div>
+              <div class="numbers-item">
+                <svg>
+                  <use xlink:href="./img/icons_phones/vodafone.svg#vodafone"></use>
+                </svg>
+                <a href="tel:+380665801090" class="numbers-link numbers-link--blue">066 580-10-90</a>
+              </div>
+              <div class="numbers-item">
+                <svg>
+                  <use xlink:href="./img/icons_phones/lifecell.svg#life"></use>
+                </svg>
+                <a href="tel:+380735801090" class="numbers-link numbers-link--blue">073 580-10-90</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="container">
+        <div class="program-registr">
+          <img src="./img/articles/program-registration.jpg" alt="Registration in the program" class="program-registr__img">
+          <div class="program-registr__descr">
+            <h2 class="title--large program-registr__title">Реєстрація у програмі медичних гарантій для лікарень</h2>
+            <p>Інформаційна система для взаємодії всіх ланок з електронною системою охорони здоров`я, Національною службою здоров`я України та роботи з електронними направленнями від сімейних лікарів.</p>
+            <div class="program-registr__btn">
+              <button class="btn btn--blue">Зареєструвати заклад</button>
+              <button class="btn btn--transparent">Дізнатися більше</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="benefits container">
+        <div class="benefits__wrapper">
+          <div class="benefits__section benefits__section--grey">
+            <h3 class="benefits__title title--middle title--middle--red title--middle--red--lower">Зручна медична інформаційна система</h3>
+            <div class="benefits__content">
+              <div class="benefits__content-item">
+                  <img class="benefits__img" src="./img/articles/benefits/hand_money.png">
+                  <p class="benefits__text">Функціонал для підключення eHealth МОЗ України</p>
+              </div>
+              <div class="benefits__content-item">
+                <img class="benefits__img" src="./img/articles/benefits/e-card.png">
+                <p class="benefits__text">Повний функціонал: електронні реєстратура, медкарта, кабінет лікаря тощо</p>
+              </div>
+              <div class="benefits__content-item">
+                <img class="benefits__img" src="./img/articles/benefits/interface.png">
+                <p class="benefits__text benefits__text--small">Зрозумілий інтерфейс, просте використання</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__section benefits__section">
+            <h3 class="benefits__title title--middle title--middle--red title--middle--red--lower">Професійна служба підтримки</h3>
+            <div class="benefits__content">
+              <div class="benefits__content-item">
+                  <img class="benefits__img" src="./img/articles/benefits/person_support.png">
+                  <p class="benefits__text benefits__text--small">Консультації щодо роботи в eHealth</p>
+              </div>
+              <div class="benefits__content-item">
+                <img class="benefits__img" src="./img/articles/benefits/house.png">
+                <p class="benefits__text benefits__text--large">Допомога в підключенні клініки, аптеки, співробітників та пацієнтів</p>
+              </div>
+              <div class="benefits__content-item">
+                <img class="benefits__img" src="./img/articles/benefits/signature.png">
+                <p class="benefits__text">Супровід щодо отримання та використання КЕП</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__section benefits__section--grey">
+            <h3 class="benefits__title title--middle title--middle--red title--middle--red--lower">Невибагливі вимоги до техніки</h3>
+            <div class="benefits__content">
+              <div class="benefits__content-item">
+                  <img class="benefits__img" src="./img/articles/benefits/computer.png">
+                  <p class="benefits__text">Не потрібно серверів <br> та потужних комп’ютерів</p>
+              </div>
+              <div class="benefits__content-item">
+                <img class="benefits__img" src="./img/articles/benefits/smartphone.png">
+                <p class="benefits__text">Працює на смартфонах</p>
+              </div>
+              <div class="benefits__content-item">
+                <img class="benefits__img" src="./img/articles/benefits/webpage.png">
+                <p class="benefits__text">Не потрібно встановлювати програмне забезпечення</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+      <article class="statistics-container">
+        <div class="statistics">
+            <div class="statistics__content">
+              <p class="statistics__number">1 100 +</p>
+              <p class="statistics__descr">унікальних організацій в системі</p>
+            </div>
+            <div class="statistics__content">
+              <p class="statistics__number">19 000 +</p>
+              <p class="statistics__descr">унікальних лікарів працює в системі</p>
+            </div>
+            <div class="statistics__content">
+              <p class="statistics__number">20 000 +</p>
+            <p class="statistics__descr">прийомів проводиться в системі щодня</p>
+          </div>
+          <div class="statistics__content">
+            <p class="statistics__number">17 200 000</p>
+            <p class="statistics__descr">декларацій укладено через Helsi</p>
+          </div>
+        </div>
+      </article>
+      <article class="contact-numbers container">
+        <p class="question">Є питання? Телефонуйте до служби підтримки:</p>
+        <div class="numbers">
+          <div class="numbers-content contact-numbers__content">
+            <div class="numbers-item">
+              <svg>
+                <use xlink:href="./img/icons_phones/telephone.svg#phone"></use>
+              </svg>
+              <a href="tel:+380445801090" class="numbers-link">044 580-10-90</a>
+            </div>
+            <div class="numbers-item">
+              <svg>
+                <use xlink:href="./img/icons_phones/kyivstar.svg#kyivstar"></use>
+              </svg>
+              <a href="tel:+380685801090" class="numbers-link">068 580-10-90</a>
+            </div>
+            <div class="numbers-item">
+              <svg>
+                <use xlink:href="./img/icons_phones/vodafone.svg#vodafone"></use>
+              </svg>
+              <a href="tel:+380665801090" class="numbers-link">066 580-10-90</a>
+            </div>
+            <div class="numbers-item">
+              <svg>
+                <use xlink:href="./img/icons_phones/lifecell.svg#life"></use>
+              </svg>
+              <a href="tel:+380735801090" class="numbers-link">073 580-10-90</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="container">
+        <div class="for-patients">
+            <img src="./img/articles/for-patients.jpg" alt="Helsi for patients" class="for-patients__img">
+            <div class="for-patients__content">
+            <h2 class="title--large for-patients__title">Helsi для пацієнтів</h2>
+            <div class="for-patients__descr">
+              <p class="for-patients__text">
+                Helsi.me – зручна медична інформаційна система для пацієнтів, що дозволяє швидко <a class="for-patients__link" href="/">знайти лікаря онлайн</a> у будь-якому куточку України, а також записати себе чи рідних до лікаря на зручні дату та час на відео-прийом або до медзакладу.
+              </p>
+              <p class="for-patients__text">
+                Завдяки сервісу Helsi можна <a class="for-patients__link" href="/">обрати сімейного лікаря для заключення декларації за медичною реформою</a>, а також зберігати всі свої медичні дані (призначення лікаря, історію візитів, рецепти, медичні документи, направлення, вакцинації) в одному місці та переглядати їх в будь-який час. 
+              </p>
+            </div>
+            <div class="for-patients__btn">
+              <button class="btn btn--blue">Записатися до лікаря</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="advantages container">
+        <h2 class="title title--large">Переваги для пацієнтів</h2>
+        <div class="advantages__content">
+          <div class="advantages__list">
+            <div class="advantages__list-item">
+              <div class="advantages__list-item--top">
+                <img src="./img/articles/advantages/fast_search.svg" alt="Fast_search">
+                <p class="advantages__subtitle">Швидкий пошук лікаря чи клініки</p>
+              </div>
+              <p class="advantages__text">Можливість обрати лікаря для укладання декларації або запису на прийом, знайти клініку за місцезнаходженням, ціною, типом (приватна або державна), відгуками тощо.</p>
+            </div>
+            <div class="advantages__list-item">
+              <div class="advantages__list-item--top">
+                <img src="./img/articles/advantages/online_registr.svg" alt="Online_registration">
+                <p class="advantages__subtitle">Миттєвий онлайн-запис на прийом</p>
+              </div>
+              <p class="advantages__text">Запис до лікаря або клініки без черг за допомогою актуального онлайн розкладу у режимі реального часу.</p>
+            </div>
+            <div class="advantages__list-item">
+              <div class="advantages__list-item--top">
+                <img src="./img/articles/advantages/all_docs.svg" alt="All_documents">
+                <p class="advantages__subtitle">Всі медичні документи в одному місці</p>
+              </div>
+              <p class="advantages__text">Постійний доступ до всіх медичних документів у вашій медичній карті онлайн.</p>
+            </div>
+            <div class="advantages__list-item">
+              <div class="advantages__list-item--top">
+                <img src="./img/articles/advantages/vaccination.svg" alt="Vaccination">
+                <p class="advantages__subtitle">Запис на вакцинацію</p>
+              </div>
+              <p class="advantages__text">Можливість обрати найближчий пункт щеплення, зручні час та вакцину. Всі дані про проведені вакцинації доступні в особистому кабінеті.</p>
+            </div>
+            <div class="advantages__list-item">
+              <div class="advantages__list-item--top">
+                <img src="./img/articles/advantages/family.svg" alt="Family">
+                <p class="advantages__subtitle">Медична картка членів вашої родини</p>
+              </div>
+              <p class="advantages__text">Простий запис родичів до лікаря, контроль медичної історії дитини, направлень, прийомів у особистому кабінеті Helsi.</p>
+            </div>
+            <div class="advantages__list-item">
+              <div class="advantages__list-item--top">
+                <img src="./img/articles/advantages/consult.svg" alt="Online_consultation">
+                <p class="advantages__subtitle">Запис на онлайн-консультацію</p>
+              </div>
+              <p class="advantages__text">Консультація з сімейним лікарем / іншим спеціалістом у режимі онлайн через додаток (телемедицина) або персонально у поліклініці чи стаціонарі.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="container">
+        <div class="app">
+          <div class="app__content">
+            <img class="app__img" src="./img/articles/app/img.png" alt="Helsi.app_desktop">
+            <div class="app__descr">
+              <h2 class="title--large app__title">Зручніше з Helsi!</h2>
+              <p class="app__text">Всі сервіси для пацієнтів доступні 24/7 на сайті або у мобільному додатку Helsi.me</p>
+              <button class="btn btn--blue">Записатися до лікаря</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="container">
+        <div class="tabs__content">
+          <div class="tabs__nav">
+              <button class="tabs__nav-btn" type="button" tab="#tab_1">Про електронне направлення</button>
+              <button class="tabs__nav-btn" type="button" tab="#tab_2">Про декларацію</button>
+              <button class="tabs__nav-btn" type="button" tab="#tab_3">Про «Доступні ліки»</button>
+          </div>
+          <div id="tab_1" class="tabs__img">
+            <h2 class="tabs__title title--large">Як працює електронне направлення?</h2>
+            <img class="tabs__img-desktop" src="./img/articles/tabs/tab_1.svg" alt="Electronic_referral">
+            <img class="tabs__img-mobile" src="./img/articles/tabs/tab_1-mobile.svg" alt="Electronic_referral">
+          </div>
+          <div id="tab_2" class="tabs__img">
+            <h2 class="tabs__title title--large">Як підписати декларацію?</h2>
+            <img class="tabs__img-desktop" src="./img/articles/tabs/tab_2.svg" alt="Declaration">
+            <img class="tabs__img-mobile" src="./img/articles/tabs/tab_2-mobile.svg" alt="Declaration">
+          </div>
+          <div id="tab_3" class="tabs__img">
+            <h2 class="tabs__title title--large">Як працює програма «Доступні ліки»?</h2>
+            <img class="tabs__img-desktop" src="./img/articles/tabs/tab_3.svg" alt="Available Medicines">
+            <img class="tabs__img-mobile" src="./img/articles/tabs/tab_3-mobile.svg" alt="Available Medicines">
+          </div>
+          </div>
+      </div>
+      </article>
+      <article class="video-container">
+        <div class="video">
+          <h2 class="title--large">Про нас говорять</h2>
+          <div class="video__content">
+            <div class="video__frame">
+              <a class="video__item" href="https://www.youtube.com/watch?v=uciq7PhPnBA&amp;amp;t=4s" target="_blank" rel="nofollow noreferrer noopener" savefrom_lm_index="2" savefrom_lm="1" title="Подивитися відео">
+                <div class="video__logo">
+                    <img src="./img/articles/video/helsi.svg" alt="helsi" class="video__logo-item" loading="lazy">
+                </div>
+                <img src="./img/articles/video/video_first.jpg" alt="registration_e-Health" class="video__img" loading="lazy">
+                <span class="video__download">
+                  <a class="video__download-icon" href="http://savefrom.net/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Duciq7PhPnBA%26amp%3Bt%3D4s&utm_source=ff&utm_medium=extensions&utm_campaign=link_modifier" target="_blank" title="Завантажити відео" savefrom_lm="1" savefrom_lm_is_link="1"></a>
+                </span>
+              </a>
+            </div>
+            <div class="video__frame">
+              <a class="video__item" href="https://tsn.ua/ukrayina/u-kvitni-startuye-pershiy-etap-medreformi-neobhidno-pidpisati-deklaraciyu-zi-svoyim-likarem-1131201.html" target="_blank" rel="nofollow noreferrer noopener" savefrom_lm_index="2" savefrom_lm="1" title="Подивится новину">
+                <div class="video__logo">
+                    <img src="./img/articles/video/1+1.png" alt="1+1" class="video__logo-item" loading="lazy">
+                </div>
+                <img src="./img/articles/video/second__video.png" alt="article_medreform" class="video__img" loading="lazy">
+              </a>
+            </div>
+            <div class="video__frame">
+              <a class="video__item" href="https://www.youtube.com/watch?v=FkYalEaOEVQ" target="_blank" rel="nofollow noreferrer noopener" savefrom_lm_index="2" savefrom_lm="1" title="Подивитися відео">
+                <div class="video__logo">
+                    <img src="./img/articles/video/five.png" alt="five" class="video__logo-item" loading="lazy">
+                </div>
+                <img src="./img/articles/video/video_third.jpg" alt="e-Health" class="video__img" loading="lazy">
+                <span class="video__download">
+                  <a class="video__download-icon" href="http://savefrom.net/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFkYalEaOEVQ&utm_source=ff&utm_medium=extensions&utm_campaign=link_modifier" target="_blank" title="Завантажити відео" savefrom_lm="1" savefrom_lm_is_link="1"></a>
+                </span>
+              </a>
+            </div>
+            <div class="video__frame">
+              <a class="video__item" href="https://youtu.be/J7775THHDIY?t=41m47s" target="_blank" rel="nofollow noreferrer noopener" savefrom_lm_index="2" savefrom_lm="1" title="Подивитися відео">
+                <div class="video__logo">
+                    <img src="./img/articles/video/ukraine.png" alt="ukraine" class="video__logo-item" loading="lazy">
+                </div>
+                <img src="./img/articles/video/video_fourth.jpg" alt="Segodnya" class="video__img" loading="lazy">
+                <span class="video__download">
+                  <a class="video__download-icon" href="http://savefrom.net/?url=https%3A%2F%2Fyoutu.be%2FJ7775THHDIY%3Ft%3D41m47s&utm_source=ff&utm_medium=extensions&utm_campaign=link_modifier" target="_blank" title="Завантажити відео" savefrom_lm="1" savefrom_lm_is_link="1"></a>
+                </span>
+              </a>
+            </div>
+            <div class="video__frame">
+              <a class="video__item" href="http://fakty.ictv.ua/ru/videos/yak-obraty-likarya-ta-zapysatysya-na-pryjom-onlajn/" target="_blank" rel="nofollow noreferrer noopener" savefrom_lm_index="2" savefrom_lm="1" title="Подивится новину">
+                <div class="video__logo">
+                    <img src="./img/articles/video/ictv.png" alt="ictv" class="video__logo-item" loading="lazy">
+                </div>
+                <img src="./img/articles/video/video_fifth.jpg" alt="article_sign-up" class="video__img" loading="lazy">
+              </a>
+            </div>
+            <div class="video__frame">
+              <a class="video__item" href="https://www.youtube.com/watch?v=Dg5wOlReV-A&amp;feature=youtu.be&amp;t=12m42s" target="_blank" rel="nofollow noreferrer noopener" savefrom_lm_index="2" savefrom_lm="1" title="Подивитися відео">
+                <div class="video__logo">
+                    <img src="./img/articles/video/kyiv.png" alt="kyiv" class="video__logo-item" loading="lazy">
+                </div>
+                <img src="./img/articles/video/video_sixth.jpg" alt="kyiv-tv" class="video__img" loading="lazy">
+                <span class="video__download">
+                  <a class="video__download-icon" href="http://savefrom.net/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDg5wOlReV-A%26amp%3Bfeature%3Dyoutu.be%26amp%3Bt%3D12m42s&utm_source=ff&utm_medium=extensions&utm_campaign=link_modifier" target="_blank" title="Завантажити відео" savefrom_lm="1" savefrom_lm_is_link="1"></a>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="about-reform container">
+        <h2 class="title--large">Про реформу</h2>
+        <div class="about-reform__content">
+          <div class="about-reform__card">
+            <div class="about-reform__descr">
+              <h3 class="about-reform__title title--middle title--middle--red">Програма медичних гарантій для лікарень </h3>
+              <div class="about-reform__text">
+                <p>
+                  В середньостроковій та довгостроковій перспективі кількість пакетів медичних послуг буде збільшуватись за рахунок більшої деталізації існуючих. Збільшення кількості пакетів дасть можливість більш чітко визначати обсяг послуг, які оплачуються НСЗУ, а також встановлювати більш конкретні вимоги до надання різних медичних послуг.
+                </p>
+                <p>
+                  Завдання НСЗУ на 2021 рік – розвиток та удосконалення існуючих пакетів медичних послуг за Програмою медичних гарантій, їх деталізація з урахуванням нагальних потреб як пацієнтів, так і медичних працівників, а також з урахуванням досвіду контрактування та впровадження ПМГ у 2020 році; здійснити закупівлю безпечних та якісних медичних послуг, необхідних пацієнту, відповідно до можливостей державного бюджету.
+                </p>
+                <p>
+                  Більше про вимоги на 2021 рік можна прочитати на <a  class="link" href="https://nszu.gov.ua/vimogi-pmg-2021">офіційному сайті НСЗУ</a>
+                </p>
+              </div>
+            </div>
+            <div class="about-reform__img">
+              <svg class="about-reform__img--first">
+                <use xlink:href="./img/articles/about-reform/first_img.svg#garantee"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="about-reform__card">
+            <div class="about-reform__img">
+              <svg class="about-reform__img--second">
+                <use xlink:href="./img/articles/about-reform/second_img.svg#medicines"></use>
+              </svg>
+            </div>
+            <div class="about-reform__descr">
+              <h3 class="about-reform__title title--middle title--middle--red">Програма “Доступні ліки”</h3>
+              <div class="about-reform__text">
+                <p>
+                  Доступні ліки – це оновлена урядова програма реімбурсації, яку з 1 квітня 2019 року адмініструє <a class="link" href="https://nszu.gov.ua/">Національна служба здоров'я України</a>.
+                </p>
+                <p>
+                  Реімбурсація – це механізм повної або часткової оплати лікарських засобів, що включені до деталізованого опису з бюджету. Починаючи з другого кварталу 2019 року управління програмою реімбурсації перейшло від МОЗ до НСЗУ, а від 2020 року забезпечення населення ЛЗ за програмою реімбурсації стало частиною програми медичних гарантій (ПМГ).
+                </p>
+                <p>
+                  Відшкодування вартості ЛЗ здійснюється НСЗУ на користь суб’єкта господарювання, що має ліцензію на роздрібну торгівлю ЛЗ, на умовах договору, укладеного між НСЗУ та таким суб’єктом господарювання. Відшкодування вартості ЛЗ безпосередньо пацієнтам не передбачено.<span class="dots">..</span>
+                </p>
+                <p class="more">
+                  Програма реімбурсації здійснюється виключно на основі та в межах функціоналу системи eHealth, що передбачає укладання договорів між НСЗУ та суб’єктами господарювання в системі eHealth і використання електронних рецептів, як складової частини електронних медичних записів.
+                </p>
+                <div class="about-reform__toggle">
+                  <button class="about-reform__btn">
+                    <span>Детальніше</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-reform__card">
+            <div class="about-reform__descr">
+              <h3 class="about-reform__title title--middle title--middle--red">Принцип «Гроші йдуть за пацієнтом»</h3>
+              <div class="about-reform__text">
+                <p>
+                  У 2019 році в Україні продовжує тривати кампанія з підписання декларацій про вибір лікарів з надання первинної медичної допомоги. Медустанови первинної ланки, вже отримують фінансування на основі договорів з Національною службою здоров'я України, що були укладені наприкінці 2018 - у першому кварталі 2019 року.
+                </p>
+                <p>
+                  Пацієнти, які ще не обрали лікаря, але перебувають у невідкладному стані, мають право отримувати безперервну та безоплатну первинну медичну допомогу у державних і комунальних закладах охорони здоров’я, але Міністерство охорони здоров'я закликає не зволікати з вибором свого лікаря.<span class="dots">..</span>
+                </p>
+                <p class="more">
+                  З квітня 2019 року лікарі первинної ланки отримують гроші лише за кожного задекларованого пацієнта. Оптимальна кількість пацієнтів для педіатра – 900, для сімейного лікаря – 1800, для терапевта – 2000. Відмовити пацієнту у підписанні декларації лікар має право лише, якщо вже набрав свою оптимальну кількість пацієнтів, або заклад не підключений до електронної системи охорони здоров’я. Лікарі можуть набирати пацієнтів понад встановлені ліміти 900/1800/2000, проте такі декларації будуть оплачуватись з понижувальними коефіцієнтами і без застосування вікових коефіцієнтів.                
+                </p>
+                <div class="about-reform__toggle">
+                  <button class="about-reform__btn">
+                    <span>Детальніше</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="about-reform__img">
+              <svg class="about-reform__img--third">
+                <use xlink:href="./img/articles/about-reform/third_img.svg#garantee"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="support-registr-container">
+        <div class="support-registr">
+          <div class="support-registr__support">
+            <div class="support-registr__support-content">
+            <h2 class="support-registr__support-title title--middle title--middle--light">
+              <a class="support-registr__link" href="https://reform.helsi.me/faq">Залишились питання?</a> Звертайтесь до служби підтримки:
+            </h2>
+            <p class="support-registr__support-hours">Час роботи пн-пт 8:00-18:00; сб 9:00-16:00</p>
+            <div class="support-registr__support-numbers">
+              <div class="numbers-content">
+                <div class="numbers-item">
+                  <svg class="support-registr__icons"> 
+                    <use xlink:href="./img/icons_phones/telephone-white.svg#phone"></use>
+                  </svg>
+                  <a href="tel:+380445801090" class="numbers-link numbers-link--white">044 580-10-90</a>
+                </div>
+                <div class="numbers-item">
+                  <svg class="support-registr__icons">
+                    <use xlink:href="./img/icons_phones/kyivstar-white.svg#kyivstar"></use>
+                  </svg>
+                  <a href="tel:+380685801090" class="numbers-link numbers-link--white">068 580-10-90</a>
+                </div>
+              </div>
+              <div class="numbers-content">
+                <div class="numbers-item">
+                  <svg class="support-registr__icons" >
+                    <use xlink:href="./img/icons_phones/vodafone-white.svg#vodafone"></use>
+                  </svg>
+                  <a href="tel:+380665801090" class="numbers-link numbers-link--white">066 580-10-90</a>
+                </div>
+                <div class="numbers-item">
+                  <svg class="support-registr__icons">
+                    <use xlink:href="./img/icons_phones/lifecell-white.svg#life"></use>
+                  </svg>
+                  <a href="tel:+380735801090" class="numbers-link numbers-link--white">073 580-10-90</a>
+                </div>
+              </div>
+            </div>
+            <a href="mailto:support@helsi.me" class="support-registr__support-email">support@helsi.me</a>
+          </div>
+        </div>
+        <div class="support-registr__registr">
+          <h2 class="title--middle title--middle--dark">Реєстрація закладу</h2>
+          <button class="btn btn--blue">ЗАРЕЄСТРУВАТИ</button>
+        </div>
+      </div>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__items">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <svg class="footer__logo">
+              <use xlink:href="./img/footer/logo-white.svg#logo"></use>
+            </svg>
+          </div>
+          <div class="footer__copyright copyright">© HELSI.me 2016-2022</div>
+          <div class="footer__doc">
+            <a href="https://reform.helsi.me/contract" class="footer__doc-item">Договір приєднання</a>
+            <a href="https://reform.helsi.me/order" class="footer__doc-item">Регламент медичної інформаційної системи "Хелсі"</a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li><a class="footer__links" href="">Головна</a></li>
+            <li><a class="footer__links" href="">Для аптек</a></li>
+            <li><a class="footer__links" href="">Для лікарень</a></li>
+            <li><a class="footer__links" href="">Пацієнтам</a></li>
+            <li><a class="footer__links" href="">Питання про реформу</a></li>
+            <li><a class="footer__links" href="">КЕП</a></li>
+            <li><a class="footer__links" href="">Про Helsi</a></li>
+            <li><a class="footer__links" href="">Інструкції</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <div class="footer__support">
+            <p class="footer__title title--small">Служба пiдтримки:</p>
+            <div class="footer__contact-links">
+              <a href="tel:+380445801090" class="footer__number">+38 044 580-10-90</a>
+              <a href="tel:+380685801090" class="footer__number">+38 068 580-10-90</a>
+              <a href="tel:+380665801090" class="footer__number">+38 066 580-10-90</a>
+              <a href="tel:+380735801090" class="footer__number">+38 073 580-10-90</a>
+              <a href="mailto:support@helsi.me" class="footer__email">support@helsi.me</a>
+            </div>
+          </div>
+          <div class="footer__socials">
+            <p class="footer__title title--small">Ми у соцмережах:</p>
+            <div class="footer__icons">
+              <a href="https://www.facebook.com/helsi.pro">
+                <svg class="footer__icons-item facebook">
+                  <use xlink:href="./img/footer/facebook.svg#fb"></use>
+                </svg>
+              </a>
+              <a href="https://invite.viber.com/?g2=AQBo8gi5aNH2QkwWCRHlTdtvK0yOsVXr9eg6QHpPqKgCHh4GJLiw8jp80NbXh8dE">
+                <svg class="footer__icons-item viber">
+                  <use xlink:href="./img/footer/viber.svg#viber"></use>
+                </svg>
+              </a>
+              <a href="https://t.me/helsiua">
+                <svg class="footer__icons-item telegram">
+                  <use xlink:href="./img/footer/telegram.svg#tg"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__login">
+        <button class="footer__button btn--white btn">Вхід</button>
+        <button class="footer__button btn--white btn">Реєстрація</button>
+      </div>
+    </div>
+    <div class="footer-mobile__content">
+      <div class="footer-mobile__copyright copyright">© HELSI.me 2016-2022</div>
+      <div class="footer-mobile__doc">
+        <a href="https://reform.helsi.me/contract" class="footer__doc-item">Договір приєднання</a>
+        <a href="https://reform.helsi.me/order" class="footer__doc-item">Регламент медичної інформаційної системи "Хелсі"</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>

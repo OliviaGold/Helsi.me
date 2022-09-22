@@ -1,0 +1,359 @@
+@media screen and (max-width: 980px) {
+  .nav {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+    
+    &__list {
+      border-radius: 5px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15% 15% 25%;
+      background-color: #fff;
+      text-transform: uppercase;
+    }
+
+    &__link {
+      margin: 3px 0;
+      display: block;
+      font-size: 18px;
+    }
+
+    &.is-open {
+      display: flex;
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    &__content {
+      justify-content: center;
+    }
+
+    &__btn {
+      &.is-open {
+        display: flex;
+        justify-content: center;
+        margin: -25%;
+        border: none;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+    }
+
+    .btn-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 25px 22px;
+    }
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        position: static;
+        margin: 0 28%;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      text-align: center;
+      margin-top: 45%;
+    }
+
+    &__btn {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      max-width: 712px;
+    }
+
+    & picture {
+      width: auto;
+    }
+  }
+
+  .numbers {
+    &-content {
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 100%;
+    }
+  }
+
+  .program-registr {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__title {
+      text-align: center;
+      width: 100%;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__descr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__btn {
+      width: 100%;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .benefits {
+    &__content {
+      gap: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .for-patients {
+    flex-wrap: wrap;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .app {
+    &__content {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+
+  .support-registr {
+    &-container {
+      padding: 0;
+    }
+
+    &__support-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .footer {
+    &__logo {
+      display: none;
+    }
+
+    &__login {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hero {
+    &__img {
+      position: static;
+      margin: 0 10%;
+    }
+
+    &-container {
+      padding: 0;
+    }
+
+    &__content {
+      margin-top: 50%;
+    }
+  }
+
+  .benefits {
+    &.container {
+      padding: 0;
+    }
+
+    &__content {
+      gap: 35px;
+      
+      &-item {
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+      }
+    } 
+
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__img {
+      width: 75px;
+    }
+  }
+
+  .statistics-container {
+    padding: 0;
+  }
+
+  .tabs {
+    &__title {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .about-reform {
+    &__card {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__card:nth-of-type(2) {
+      flex-direction: column-reverse;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__descr {
+      width: 100%;
+    }
+  }
+
+  .support-registr {
+    &__support {
+      display: none;
+    }
+    
+    &__registr {
+      width: 100%;
+      padding: 40px;
+    }
+  }
+
+  .footer {
+    &__items {
+      width: 100%;
+    }
+
+    &__login {
+      width: 100%;
+      margin: 30px 0 0;
+    }
+
+    &__button {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title--large {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .tabs {
+    &__nav {
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      &-desktop {
+        display: none;
+      }
+
+      &-mobile {
+        display: flex;
+      }
+    }
+  }
+
+  .video-container {
+    padding: 0;
+  }
+
+  .about-reform {
+    display: none;
+  }
+
+  .footer {
+    &__content {
+      display: none;
+    }
+
+    &-mobile {
+      &__copyright, &__doc {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+      }
+
+      &__doc {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+    }
+
+    &__list {
+      border-right: 2px solid #fff;
+    }
+
+    &__nav {
+      width: 50%;
+    }
+
+    &__contacts {
+      margin-left: 15px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__icons {
+      justify-content: center;
+    }
+  } 
+}

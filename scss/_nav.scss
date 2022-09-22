@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  gap: 24px;
+
+  &__list {
+    font-family: $nav-font;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  &__link {
+    color: $main-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
